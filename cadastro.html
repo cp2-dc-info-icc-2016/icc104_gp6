@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<script>
+show_1 = {
+"usuario" : "Teste!",
+"email" : "???@exemploShow.com",
+"cpf" : "111-262-343-29",
+"masculino" : false,
+"feminino" : false,
+"outro" : true,
+"senha" : ****,
+"confirmSenha" : ****
+
+}
+show_2 = {
+"usuario" : "Teste2!",
+"email" : "???@exemploShow.com",
+"cpf" : "111-262-343-29",
+"masculino" : false,
+"feminino" : false,
+"outro" : true,
+"senha" : ****,
+"confirmSenha" : ****
+
+}
+show_3 = {
+"usuario" : "Teste3!",
+"email" : "???@exemploShow.com",
+"cpf" : "111-262-343-29",
+"masculino" : false,
+"feminino" : false,
+"outro" : true,
+"senha" : ****,
+"confirmSenha" : ****
+
+}
+show_4 = {
+"usuario" : "Teste4!",
+"email" : "???@exemploShow.com",
+"cpf" : "111-262-343-29",
+"masculino" : false,
+"feminino" : false,
+"outro" : true,
+"senha" : ****,
+"confirmSenha" : ****
+
+}
+function carregaFuncionario(func) {
+document.getElementById("nomeShow").value = show.nome;
+document.getElementById("cpfShow").value = func.cpf;
+
+
+}
+function salvaNois(func) {
+        func.nome = document.getElementById("nomeShow").value;
+        func.cpf = document.getElementById("cpfShow").value;
+		func.masculino = document.getElementById("masculinoShow").checked;
+		func.feminino = document.getElementById("femininoShow").checked;
+		func.outro = document.getElementById("outroShow").checked;
+alert("Ja salvei pra vc... ^-^")
+
+}
+
+
+</script>
+<style>
+body {
+    background-color: #CAE1FF;
+}
+.botaoDoTopo {
+    background-color: #87CEFF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 16px;
+
+}
+div{
+	max-width: 1200px;
+    height: 1000px;
+    background-color: #ffffff;
+}
+</style>
+<head>
+	<title>--Tourist Cadastro--</title>
+</head>
+<body>
+<meta charset="utf-8"><center><div><input type=button class="botaoDoTopo" value="Início" onclick="alert('Eu já faço coisas! >.<');window.open('file:///C:/Users/labcaxias/Documents/GitHub/icc104_gp6/home.html');javascript:window.close();">
+<input type=button class="botaoDoTopo" value="Preços" onclick="alert('não posso ser ultilizado ainda >.<');">
+<input type=button class="botaoDoTopo" value="Locais" onclick="window.open('file:///C:/Users/labcaxias/Documents/GitHub/icc104_gp6/locais.html');javascript:window.close();">
+<input type=button class="botaoDoTopo" value="Cadastro" onclick="window.open('file:///C:/Users/labcaxias/Documents/GitHub/icc104_gp6/cadastro.html');javascript:window.close();">
+<h1>Cadastre-se aqui!</h1>
+<h4>Usuário :<input id="nomeShow" type="text" value="???" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>Email   :<input id="emailShow" type="text" value="???@exemplo.com" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>CPF     :<input id="cpfShow" type="text" value="???" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>Senha     :<input id="senhaShow" type="text" value="****" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>Repita sua senha     :<input id="confirmSenhaShow" type="text" value="****" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>Maculino:<input id="masculinoShow" type="checkbox" value="false" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>Feminino:<input id="femininoShow" type="checkbox" value="false" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<h4>Outro:<input id="outroShow" type="checkbox" value="false" onclick="alert('não posso ser ultilizado ainda >.<');"></h4>
+<input type="button" value="é nois!" onclick="carregaNois(show_1);">
+<input type="button" value="é nois!" onclick="salvaNois(show_1);">
+<img src="1ie2ie.jpg" width=800px height=500px >
+
+
+</div></center>
+
+
+</body>
+</html>
