@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
 
 <script>
-funcionario_1 = {
+eq_1 = {
 	"usuario": "---",
 	"senha": "---"
 }
-funcionario_2 = {
+eq_2 = {
 	"usuario": "---",
 	"senha": "---"
 }
 
 
-function carregaFuncionario(func) {
+function carregaeq(func) {
 		document.getElementById("in_usuario").value = func.usuario;
 		document.getElementById("in_senha").value = func.senha;
 }
 
-function salvaFuncionario(func) {
+function salvaeq(func) {
 		func.usuario = document.getElementById("in_usuario").value;
 		func.senha = document.getElementById("in_senha").value;
 }
@@ -69,8 +69,8 @@ div{
 <h4>Usuário:<input type="text" id="in_usuario" value=""></h4>
 <h4>Senha  :<input type="text" id="in_senha" value=""></h4>
 
-			<div class="mini"><input type="button" class="botaoDoRegistro" value="Carregar usuario salvo" onclick="carregaFuncionario(funcionario_1);">
-			<input type="button" class="botaoDoRegistro" value="Salvar" onclick="salvaFuncionario(funcionario_1);">
+			<div class="mini"><input type="button" class="botaoDoRegistro" value="Carregar usuario salvo" onclick="carregaeq(eq_1);">
+			<input type="button" class="botaoDoRegistro" value="Salvar" onclick="salvaeq(eq_1);">
 			<input type="button" class="botaoDoRegistro" value="Logar" onclick="window.open('file:///C:/Users/labcaxias/Documents/GitHub/icc104_gp6/home.html');javascript:window.close();">
 			<div><img src="1ie2ie.jpg" width=800px height=500px>
 
