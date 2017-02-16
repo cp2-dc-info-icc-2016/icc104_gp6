@@ -27,13 +27,27 @@ coisas = {
 		pturistico: "",
 		cultura: ""
 	}
-			"" : {
-		titulo: "",
-		desc: "",
-		clima: "",
-		pturistico: "",
-		cultura: ""
-	}
+
 	
 	
 }
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+function affdetalhes (it) {
+	document.getElementById("").src = it.imagem;
+	document.getElementById("").innerHTML = it.titulo;
+	document.getElementById("").innerHTML = it.desc;
+	document.getElementById("").innerHTML = it.clima;
+	document.getElementById("").innerHTML = it.pturistico;
+	document.getElementById("").innerHTML = it.cultura;
+}
+
+var infos = getParameterByName('infos');
+affdetalhes(coisas[infos]); 
