@@ -1,4 +1,5 @@
 <html>
+
 <style>
 body {
     background-color: #CAE1FF;
@@ -18,8 +19,12 @@ div{
 
     max-width: 1200px;
 
-    height: 725px;
+    height: 850px;
     background-color: #ffffff;
+}
+.imagemShow {
+	width: 500px;
+	height: 500px;
 }
 </style>
 <head>
@@ -34,12 +39,12 @@ div{
 <input type=button class="botaoDoTopo" value="Locais" onclick="window.open('file:///C:/Users/labcaxias/Documents/GitHub/icc104_gp6/locais.html');javascript:window.close();">
 <input type=button class="botaoDoTopo" value="Cadastro" onclick="window.open('file:///C:/Users/labcaxias/Documents/GitHub/icc104_gp6/cadastro.html');javascript:window.close();">
 <br><br>
-<img id="it_imagem">
+<img id="it_imagem" class="imagemShow">
 <h1 id="it_titulo"></h1>
-<p><label>Descrição: </label> <span id="it_desc"></span></p>
-<p><label>Clima: </label> <span id="it_clima"></span></p>
-<p><label>Ponto Turistico: </label> <span id="it_pturistico"></span></p>
-<p><label>Cultura: </label> <span id="it_cultura"></span></p>
+<p>Descrição:  <span id="it_desc"></span></p>
+<p>Clima:  <span id="it_clima"></span></p>
+<p>Ponto Turistico:  <span id="it_pturistico"></span></p>
+<p>Cultura:  <span id="it_cultura"></span></p>
 
 
 
@@ -48,3 +53,5 @@ div{
 
 </body>
 </html>
+
+<script src="espec.js"></script>
